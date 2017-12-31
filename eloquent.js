@@ -43,9 +43,8 @@ Bean Counting
 function countBs (string) {
     var count = 0;
     for (var i = 0; i < string.length; i++) {
-      if (string.charAt(i) == "B") {
+      if (string[i] == "B")
         count++;
-      }
     }
       return count;
   }
@@ -56,12 +55,11 @@ function countBs (string) {
 
   // Your code here.
 
-function countChar (string, char) {
-    var count = 0
+  function countChar (string, char) {
+    var count = 0;
     for (var i = 0; i < string.length; i++) {
-      if (string.charAt(i) == char) {
+      if (string[i] == char)
         count++;
-      }
     }
       return count;
   }
