@@ -34,3 +34,43 @@ console.log(isEven(75));
 // → false
 console.log(isEven(-8));
 // → true
+
+
+Bean Counting
+
+//counting Bs on its own
+
+function countBs (string) {
+    var count = 0;
+    for (var i = 0; i < string.length; i++) {
+      if (string.charAt(i) == "B") {
+        count++;
+      }
+    }
+      return count;
+  }
+  console.log(countBs("BBC"));
+  // → 2
+
+  //countChar and countBs
+
+  // Your code here.
+
+function countChar (string, char) {
+    var count = 0
+    for (var i = 0; i < string.length; i++) {
+      if (string.charAt(i) == char) {
+        count++;
+      }
+    }
+      return count;
+  }
+  
+  function countBs (string) {
+    return countChar (string, "B");
+  };
+  
+  console.log(countBs("BBC"));
+  // → 2
+  console.log(countChar("kakkerlak", "k"));
+  // → 4
